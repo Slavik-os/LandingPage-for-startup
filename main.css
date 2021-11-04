@@ -1,0 +1,453 @@
+/* Local fonts */
+
+@font-face {
+    font-family: 'TolyerRegular';
+    src: url('fonts/Tolyer\ Regular\ no.4.ttf');
+}
+@font-face {
+    font-family: 'TungsteBook';
+    src: url('fonts/Tungsten-Book.ttf');
+}
+
+@font-face {
+    font-family: 'RoboToCondensedBold';
+    src: url('fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+/*Defaults*/
+* {
+    padding : 0 ;
+    margin : 0 ;
+    box-sizing: border-box;
+}
+body {background-color : #000;}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/cyber.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    
+
+}
+/* @keyframes changeBg{
+    0%,100%  {background-—image: url("Wallpaperkiss_1350423.jpg");}
+    25% {background-image: url("15410.jpg");}
+    50% {background-image: url("https://i.stack.imgur.com/HobHO.png");}
+    75% {background-image: url("https://i.stack.imgur.com/3hiHO.png");}
+ } */
+
+
+nav {
+    width : 100% ; 
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+  padding-left : 50px;
+  padding-top : 40px;
+  list-style: none;
+}
+
+nav .logo {   
+    opacity: 60%;
+    padding-top: 35px;
+    color : #fff;
+    font-family: 'TolyerRegular', sans-serif;
+    font-size : 43px;
+}
+nav ul li:nth-child() a { border-bottom: 1px solid #fff;}
+nav ul li a {
+    letter-spacing: 3px;
+    font-size : 24px;
+    color : #fff;
+    text-transform: uppercase;
+    font-family: 'TungsteBook',sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* Header container */
+
+.header-container {
+    width : 100% ;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container span h1 {
+    font-size :50px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    color : #fff;
+    font-family: 'TolyerRegular', sans-serif;
+}
+
+.header-container span h2 {
+    font-family: 'Tungsten',sans-serif;
+    font-size : 48px;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+    color  : #fff;
+}
+.Hero-line {
+    width: 37.77vw;
+    border: 4px solid rgba(192, 13, 13, 0.83);
+    opacity: 90%;
+}
+
+.Buttons {margin-top : 50px}
+.readMore:hover ,.contactUs:hover{opacity: 100%;}
+.readMore {
+    background: rgba(192, 13, 13, 0.67);
+    letter-spacing: 0.18em;
+    padding: 14px 25px 14px 25px;
+    color : #fff;
+    text-decoration: none;
+    font-family: 'RoboToCondensedBold',sans-serif;
+    font-size: 18px; 
+    font-weight: 700;
+    margin-right: 12px;
+    opacity: 80%;
+}
+
+.contactUs{
+    letter-spacing: 0.18em;
+    padding: 14px 20px 14px 20px; 
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    color : #fff;
+    text-decoration: none;
+    font-family: 'RoboToCondensedBold',sans-serif;
+    font-size: 18px; 
+    font-weight: 700;
+    opacity: 80%;
+}
+
+
+/* Header container end */
+
+/* Container */
+
+.container {
+    width : 100% ;
+    height: 160vh;
+    background-color : #000;
+}
+.description-section {
+    padding-top : 6.32vh;
+    width : 100% ;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.description-section span h1 {
+    font-family: 'TolyerRegular',sans-serif;
+    font-size : 44px;
+    font-weight: 400;
+    color : #fff;
+    letter-spacing: 0.07em;
+   
+}
+
+.description-section p {
+    padding-top : 20px;
+    font-family: 'TungsteBook', sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    font-weight: 400;
+    color : #fff;
+}
+
+/* image container */
+.image-grid-container {
+    margin-top : 8%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.image-container-1{
+    position: relative;
+    width: 576px;
+    height: 672px;
+    margin-left : 9%;
+}
+
+.right-image-container{
+    width: 576px;
+    height: 672px;
+    object-fit: cover;
+    object-position: center center;
+   
+}
+.text-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color : #fff;
+    align-items: center ;
+    text-align: center;
+    justify-content: center;
+}
+.text-box span h1 {
+    font-family: 'TolyerRegular',sans-serif;
+    font-weight: 400;
+    letter-spacing: 7%;
+    font-size : 30px ;
+    
+}
+.text-box p , .text-box span {
+    margin-top: 5% ;
+    font-family: 'Tungsten',sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 7%;
+    color : #fff;
+    line-height: 1.5;
+
+}   
+
+.text-box span  a {
+    background: rgba(192, 13, 13, 0.67);
+    letter-spacing: 0.18em;
+    padding: 10px 22px 10px 22px;
+    color : #fff;
+    text-decoration: none;
+    font-family: 'TungsteBook';
+    font-size: 16px; 
+    font-weight:bold ; 
+}
+
+
+.image-container {
+    position: relative;
+    width: 576px;
+    height: 329.92px;
+    margin-bottom : 10px;
+}
+.image-container img {
+    width: 576px;
+    height: 329.92px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.text-box-right{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left : 15px;
+    padding-bottom: 50px;
+    line-height: 1.4em;
+}
+
+.text-box-right span h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    margin-bottom: 10px; 
+    font-family: 'TungsteBook';
+    color : #fff;
+}
+.text-box-right span a:hover  {opacity: 100%;}
+.text-box span a:hover {background-color : rgb(122, 21, 21) ;}
+.text-box-right span a {
+    background: rgba(192, 13, 13, 0.67);
+    letter-spacing: 0.18em;
+    padding: 10px 22px 10px 22px;
+    color : #fff;
+    text-decoration: none;
+    font-family: 'TungsteBook';
+    font-size: 16px; 
+    font-weight: 700;
+    opacity: 80%;
+
+}
+
+/* image container end */
+
+/* container end */
+/* footer */
+footer {
+    width: 100%;
+    height: 35vh;
+    background : #000;
+    justify-content: center;
+}
+.social-media-links  {
+    width: 50%;
+    height: 40%;
+    margin : auto ;
+}
+footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+footer ul li {
+    list-style: none;
+    padding-right: 6%;
+}
+
+
+.fab {
+    font-size : 28px;
+    color : #fff;
+}
+
+.subscribe-section {
+    margin-top : -3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.subscribe-section span {
+    font-family: 'RoboToCondensedBold',sans-serif;
+    color :#fff;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-right : 20px;
+    text-transform: uppercase;
+}
+.subscribe-section input[type=text] {
+    width: 386px;
+    height: 34px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background: none;
+}
+
+
+input[type=text],select {
+    color : #C5C5CD ;
+    padding-left : 10px;
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 13px;
+}
+input[type=submit] {
+    border : 1px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color : #fff;
+    width: 120px;
+    height: 34px;
+    font-family: 'RoboToCondensedBold',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    margin-left : 10px;
+}
+
+
+
+.footer-end-list {
+    width: 60%;
+    margin:40px auto ;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.footer-end-list ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-end-list ul li a {
+    font-family: 'TungsteBook',sans-serif;
+    font-size: 18px;
+    font-weight :  300;
+    color : #888888 ;
+    letter-spacing: 2%;
+    text-decoration : none;
+}
+.footer-end-list ul li:first-child{padding-bottom: 6%;}
+.footer-end-list ul li:first-child a {
+    color : #fff;
+    font-size: 22px;
+    font-family: 'TolyerRegular',sans-serif;
+}
+
+/* footer end */
+
+/* copyright */
+
+.copyright {
+    margin-top : 5%;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.copyright span {
+    
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #707070;
+}
+
+.termAndPolicy {
+    color: rgba(192, 13, 13, 0.8);
+}
+/* copyright end */
+
+
+
+/* animation */
+
+.header-container {
+    animation-name: onload;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in;
+}
+
+@keyframes onload {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 100%;
+
+    }
+    
+}
+
+/* animation end */

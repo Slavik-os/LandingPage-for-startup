@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pulled/LandingPage-for-startup/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>The Hawks</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">B.O.T.H<a href="#"></a></span>
+            <a href="#" id="dropDownButton">&#9776;</a>
+            
+            <ul id="dropDownMenu">
+                <li> <a href="#" id="closeButton" onclick="close()">&#9747;</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">INNOVATION</a></li>
+                <li><a href="#">INTELLIGENCE</a></li>
+                <li><a href="#">TRAINING</a></li>
+                <li><a href="#">CARRERS</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-container">
+                <span class="header-title"><h1>it takes 20 years to build a reputation</h1></span>
+                <span class="header-qoute"><h2>and few minutes of cyber-incident to ruin it . </h2></span>
+                <div class="Hero-line"></div>
+                <div class="Buttons">
+                    <a class="readMore" href="#">READ MORE</a>
+                    <a class="contactUs" href="#">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="description-section">
+            <span><h1>ITS OUR SKILLS THAT MAKE IT POSSIBLE</h1></span>
+            <p>“We discovered in our research that insider threats are not viewed as seriously as external<br>
+                threats, like a cyberattack. But when companies had an insider threat, in general,<br>
+                they were much more costly than external incidents. This was largely because the insider that<br>
+                is smart has the skills to hide the crime, for months, for years, sometimes forever.”</p>
+        </div>
+        <div class="image-grid-container">
+            <div class="image-container-1">
+                <div class="text-box">
+                    <span><h1>why we stand from everyone else ?</h1></span> 
+                    <p>Simply because we care , simply because we love what we are doing , Our shared <br>
+                        theory in life ; if you don’t love it enough don’t do it . And we bett you that no one <br>
+                        in our company doesn’t love cybersecurity</p>
+                        <span><a href="#">READ MORE</a></span>
+                    </div>
+                    <img class="right-image-container" src="assets/intelligence_video_still.jpg" alt="">
+            </div>
+            <div class="left-image-container">
+                <div class="image-container image-container-2">
+                    <div class="text-box-right">
+                        <span><h2>TRAINING FOR COMPANIES</h2></span>
+                        <span><a href="#">READ MORE</a></span>
+                    </div>
+                    <img src="assets/Capco-Careers-Homepage-Banner.jpg" alt="">
+                </div>
+                <div class="image-container image-container-3">
+                    <div class="text-box-right">
+                        <span><h2>success story</h2></span>
+                        <span><a href="#">READ MORE</a></span>
+                    </div>
+                    <img src="assets/About_Us_Success_Stories_fallback_still.jpg " alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="social-media-links">
+            <ul>
+               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-google"></i></a></li>
+               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+               <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="subscribe-section">
+            <span>Sign up for our news letter</span>
+            <form action="#">
+                <input type="text" placeholder="Email address">
+                <input type="submit" value="SUBSCRIBE">
+            </form>
+        </div>
+        <div class="footer-end-list">
+
+            <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Pricing over view</a></li>
+                <li><a href="#">Flexible Data</a></li>
+                <li><a href="#">High volume Data</a></li>
+                <li><a href="#">Enterprise</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">DEVELOPERS</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Open sources</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Partnerships</a></li>
+          
+            </ul>
+
+            <ul>
+                <li><a href="#">GET CONNECTED</a></li>
+                <li><a href="#">Connectivity</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manager landing page</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        <span>© 2021 Hawks. All right servered. <a class="termAndPolicy" href="#">Terms of Use and Privacy Policy</a></span>
+    </div>
+
+
+    <script type="text/javascript">
+        console.log('working');
+        const button = document.getElementById("dropDownButton");
+        const menu = document.getElementById("dropDownMenu");
+        const close = document.getElementById("closeButton");
+
+        button.addEventListener('click',()=> {
+            if (menu.style.display=='block')  {
+                menu.style.display='none';
+            }
+            else {
+                menu.style.display='block';
+            }
+        });
+        close.addEventListener('click',()=>{
+            menu.style.display='none';
+        });
+    </script>
+
+</body>
+</html>
